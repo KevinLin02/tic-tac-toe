@@ -28,6 +28,57 @@
   color: #61dafb;
 }
 
+.game{
+  display:flex;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.square {
+  width: 70px;
+  height: 70px;
+  display: flex; 
+  border: 3px solid black;
+  justify-content: center; /*x軸*/
+  align-items: center; /*y軸*/
+}
+
+.game-board{
+  display: grid;
+  grid-template-columns: repeat(3,70px);
+  grid-template-rows: repeat(3,70px);
+}
+
+.hovered-image{
+  width: 50px;
+  height: 50px;
+  justify-content: center;  
+  align-items: center;
+}
+
+.squareImage {
+  width: 60px;
+  height: 60px;
+}
+
+.result{
+  border: 3px solid black;
+  width: 300px;
+  height: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  justify-content: center;  
+  align-items: center;
+}
+
+.pika-bg {
+  background-color: yellow;
+}
+
+.char-bg {
+  background-color: orange;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
